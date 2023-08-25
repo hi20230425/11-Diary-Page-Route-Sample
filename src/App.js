@@ -25,6 +25,7 @@ import Gallery from './component/Gallery';
 import Company from './component/Company';
 import Edit from './component/Edit';
 import Edit2 from './component/Edit2';
+import UseEffect from './component/UseEffect';
 
 // 라이팅 되는 페이지 생성 : 요청이 있을때 컴포넌트 페이지 
 
@@ -65,6 +66,10 @@ function App() {
           <li>
             <button onClick = {() => {navigage(-2)}} > 이전이전페이지로 이동 </button>
           </li>
+          <li>
+              <Link to = "/useEffect" > useEffect 예제 호출 </Link>
+          </li>
+
         </ul>
       </nav>
 
@@ -75,6 +80,7 @@ function App() {
           <Route path = "/company" element = {<Company />}> </Route>
           <Route path = "/edite/:id" element = {<Edit />}></Route>
           <Route path = "/edite2" element = {<Edit2 /> }></Route>
+          <Route path = "/useEffect" element = {<UseEffect />}> </Route>
       </Routes>
 
   </>
