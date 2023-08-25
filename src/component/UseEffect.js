@@ -31,7 +31,7 @@ const UseEffect =() => {
     ); 
 
     const countChange =() => {
-        setCount (10); 
+        setCount (count + 10); 
     }
 
 
